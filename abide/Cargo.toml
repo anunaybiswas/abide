@@ -1,0 +1,13 @@
+[package]
+name = "abide"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+abide-core = { workspace = true }
+prost = { workspace = true }
+tonic = { workspace = true }
+tonic-prost = { workspace = true }
+
+[build-dependencies]
+tonic-prost-build = { workspace = true }

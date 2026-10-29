@@ -1,0 +1,14 @@
+syntax = "proto3";
+package internode;
+
+message PingRequest {
+    string from = 1;
+}
+
+message PingResponse {
+    string from = 1;
+}
+
+service Internode {
+    rpc Ping(PingRequest) returns (PingResponse);
+}
